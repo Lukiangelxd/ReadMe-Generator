@@ -18,7 +18,7 @@ const questions = [
     {
         type: 'input',
         message: 'What are the steps required to install your project?',
-        name: 'install',
+        name: 'installation',
     },
     {
         type: 'input',
@@ -28,12 +28,12 @@ const questions = [
     {
         type: 'input',
         message: 'What does the user need to know about contributing to the repo?',
-        name: 'contribution',
+        name: 'contributing',
     },
     {
         type: 'input',
         message: 'How would the user run tests?',
-        name: 'test',
+        name: 'tests',
     },
     {
         type: 'list',

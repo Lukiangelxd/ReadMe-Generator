@@ -55,9 +55,9 @@ function generateMarkdown(data) {
   ## Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
-  * [License](#license)
   * [Contributing](#contributing)
   * [Tests](#tests)
+  * [License](#license)
   * [Questions](#questions)
 
   ## Installation
@@ -73,7 +73,7 @@ function generateMarkdown(data) {
   ${data.test}
 
   ## License 
-  This project is licensed under ${renderLicenseSection(data.license)}
+  This project is licensed under the ${renderLicenseSection(data.license)}
 
   ## Questions
   If you have any questions about this project, you can view it at https://github.com/${data.github}. You can also contact me at ${data.email}. 
