@@ -1,32 +1,32 @@
 
-  # README Generator
+  # a
 
   ## Description
-  Creates a professional README
+  b
 
   ## Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
-  * [License](#license)
   * [Contributing](#contributing)
   * [Tests](#tests)
+  * [License](#license)
   * [Questions](#questions)
 
   ## Installation
-  npm install
+  undefined
 
   ## Usage
-  use node index.js to open the prompts, then follow and answer the prompts to fill out the README
+  d
 
   ## Contributing
-  N/A
+  undefined
 
   ## Tests
-  npm
+  undefined
 
   ## License 
-  This project is licensed under 
+  This project is licensed under the 
 
   ## Questions
-  If you have any questions about this project, you can view it at https://github.com/amzemina. You can also contact me at amzemina@gmail.com. 
+  If you have any questions about this project, you can view it at https://github.com/g. You can also contact me at h. 
   

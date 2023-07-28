@@ -1,51 +1,47 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+//Function that returns a license badge based on which license is passed in
+// If there is no license, returns an empty string
 function renderLicenseBadge(license) {
-    switch (license) {
-      case "MIT":
-          console.log("[![License](https://img.shields.io/badge/License-MIT-blue.svg)]");
-          return "[![License](https://img.shields.io/badge/License-MIT-blue.svg)]";
-      case "Apache":
-          console.log("[![License](https://img.shields.io/badge/License-Apache2.0-red)]");
-          return "[![License](https://img.shields.io/badge/License-Apache2.0-red)]";
-      case "GNU":
-          console.log("[![License](https://img.shields.io/badge/License-GNU-red)]");
-          return "[![License](https://img.shields.io/badge/License-GNU-red)]";
-      default:
-          console.log("");
-          return "";
+  switch (license) {
+    case "MIT":
+      return "[![License](https://img.shields.io/badge/License-MIT-blue.svg)]";
+    case "Apache":
+      return "[![License](https://img.shields.io/badge/License-Apache2.0-red)]";
+    case "GNU":
+      return "[![License](https://img.shields.io/badge/License-GNU-red)]";
+    default:
+      return "";
   }
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+//Function that returns the license link
+// If there is no license, returns an empty string
 function renderLicenseLink(license) {
-    switch (license) {
-      case "MIT":
-        console.log("(https://www.opensource.org/licenses/MIT)");
-        return "[MIT Link](https://www.opensource.org/licenses/MIT)"
-      case "Apache":
-        console.log("(https://www.apache.org/licenses/LICENSE-2.0)");
-        return "[Apache Link](https://www.apache.org/licenses/LICENSE-2.0)"
-      case "GNU":
-        console.log("(https://www.gnu.org/licenses/gpl-3.0.en.html)");
-        return "[GNU Link](https://www.gnu.org/licenses/gpl-3.0.en.html)"
-      default:
-        console.log("");
-        return "";
-    }
+  switch (license) {
+    case "MIT":
+      return "[MIT Link](https://www.opensource.org/licenses/MIT)"
+    case "Apache":
+      return "[Apache Link](https://www.apache.org/licenses/LICENSE-2.0)"
+    case "GNU":
+      return "[GNU Link](https://www.gnu.org/licenses/gpl-3.0.en.html)"
+    default:
+      return "";
   }
-
-
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {
-  return `${renderLicenseBadge()}${renderLicenseLink()}`
 }
 
-// TODO: Create a function to generate markdown for README
+
+//Function that returns the license section of README
+// If there is no license, returns an empty string
+function renderLicenseSection(license) {
+  if (license !== "none") {
+    return `This project is licensed under the ${renderLicenseBadge()}${renderLicenseLink()}`
+  } else {
+    return "";
+  }
+}
+
+//Function to generate markdown for README
 function generateMarkdown(data) {
-  
+
   return `
   # ${data.title}
 
@@ -73,7 +69,7 @@ function generateMarkdown(data) {
   ${data.test}
 
   ## License 
-  This project is licensed under the ${renderLicenseSection(data.license)}
+  ${renderLicenseSection(data.license)}
 
   ## Questions
   If you have any questions about this project, you can view it at https://github.com/${data.github}. You can also contact me at ${data.email}. 
