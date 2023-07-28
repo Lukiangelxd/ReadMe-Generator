@@ -3,11 +3,11 @@
 function renderLicenseBadge(license) {
   switch (license) {
     case "MIT":
-      return "[![License](https://img.shields.io/badge/License-MIT-blue.svg)]";
+      return "![License](https://img.shields.io/badge/License-MIT-blue.svg)";
     case "Apache":
-      return "[![License](https://img.shields.io/badge/License-Apache2.0-red)]";
+      return "![License](https://img.shields.io/badge/License-Apache2.0-red)";
     case "GNU":
-      return "[![License](https://img.shields.io/badge/License-GNU-red)]";
+      return "![License](https://img.shields.io/badge/License-GNU-red)";
     default:
       return "";
   }
@@ -33,7 +33,7 @@ function renderLicenseLink(license) {
 // If there is no license, returns an empty string
 function renderLicenseSection(license) {
   if (license !== "none") {
-    return `This project is licensed under the ${renderLicenseBadge()}${renderLicenseLink()}`
+    return `This project is licensed under the ${renderLicenseBadge(license)}, ${renderLicenseLink(license)}`
   } else {
     return "";
   }

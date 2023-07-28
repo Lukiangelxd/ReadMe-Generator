@@ -2,7 +2,7 @@
   # a
 
   ## Description
-  b
+  s
 
   ## Table of Contents
   * [Installation](#installation)
@@ -16,7 +16,7 @@
   undefined
 
   ## Usage
-  d
+  f
 
   ## Contributing
   undefined
@@ -25,8 +25,8 @@
   undefined
 
   ## License 
-  This project is licensed under the 
+  This project is licensed under the ![License](https://img.shields.io/badge/License-MIT-blue.svg), [MIT Link](https://www.opensource.org/licenses/MIT)
 
   ## Questions
-  If you have any questions about this project, you can view it at https://github.com/g. You can also contact me at h. 
+  If you have any questions about this project, you can view it at https://github.com/h. You can also contact me at j. 
   
