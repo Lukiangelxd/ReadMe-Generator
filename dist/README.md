@@ -1,9 +1,8 @@
 
-  # README Generator
+  # Example Project Title
 
   ## Description
-  User can create a professional README using the node index.js prompt questions. 
-  This project was made using npm install, and VsCode.
+  Example project description. This section is typically longer than the title.
 
   ## Table of Contents
   * [Installation](#installation)
@@ -14,21 +13,19 @@
   * [Questions](#questions)
 
   ## Installation
-  User downloads repository, then runs `npm install`.
+  Clone the repository to your computer and then run `npm install`
 
   ## Usage
-  Open node index.js, then answer the questions prompted to fill out the README.
-  
-  [Untitled_ Jul 28 2023 5_45 PM.webm](https://github.com/Amzemina/ReadMe_Generator/assets/128834562/4495c813-a67f-419f-aa9d-ef74b2885523)
+  Example project use text. This area describes how to use the deployed project.
 
   ## Contributing
-  n/a
+  Contributions are welcome.
 
   ## Tests
-  n/a
+  Run `npm test`
 
   ## License 
-  This project is licensed under the ![License](https://img.shields.io/badge/License-MIT-blue.svg), [MIT Link](https://www.opensource.org/licenses/MIT)
+  This project is licensed under the ![License](https://img.shields.io/badge/License-Apache2.0-red), [Apache Link](https://www.apache.org/licenses/LICENSE-2.0)
 
   ## Questions
   If you have any questions about this project, you can view it at https://github.com/amzemina. You can also contact me at amzemina@gmail.com. 
