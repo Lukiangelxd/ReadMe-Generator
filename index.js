@@ -36,10 +36,10 @@ const questions = [
         name: 'test',
     },
     {
-        type: 'checkbox',
+        type: 'list',
         message: 'Choose a license for the project.',
         name: 'license',
-        choices: ['MIT', 'Apache', 'GPL'],
+        choices: ['MIT', 'Apache', 'GNU'],
     },
     {
         type: 'input',
@@ -56,7 +56,7 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-fs.writeFile(fileName, JSON.stringify(data), 'utf8', (err) => {
+fs.writeFile(fileName, generateMarkdown(data), 'utf8', (err) => {
     if (err) {
       console.error('Error writing file:', err);
     } else {
