@@ -63,10 +63,10 @@ function generateMarkdown(data) {
   ${data.usage}
 
   ## Contributing
-  ${data.contribution}
+  ${data.contributing}
 
   ## Tests
-  ${data.test}
+  ${data.tests}
 
   ## License 
   ${renderLicenseSection(data.license)}
