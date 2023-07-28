@@ -56,7 +56,11 @@ const questions = [
 
 //function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile(fileName, generateMarkdown(data), 'utf8', (err) => {
+    let outPutDirectory = "dist"
+    if (!fs.existsSync(outPutDirectory)){
+        fs.mkdirSync(outPutDirectory);
+    }
+    fs.writeFile(`${outPutDirectory}/${fileName}`, generateMarkdown(data), 'utf8', (err) => {
         if (err) {
             console.error('Error writing file:', err);
         } else {

@@ -2,7 +2,7 @@
   # README Generator
 
   ## Description
-  User can create a professional readme using the node index.js prompt questions
+  User creates a professional README using node index.js question prompts.
 
   ## Table of Contents
   * [Installation](#installation)
@@ -13,16 +13,16 @@
   * [Questions](#questions)
 
   ## Installation
-  undefined
+  User clones repo, and npm install
 
   ## Usage
-  open node index.js, then fill out the questions prompted to fill out the readme
+  User opens node index.js, then answers the questions to fill out the README
 
   ## Contributing
   n/a
 
   ## Tests
-  npm
+  n/a
 
   ## License 
   This project is licensed under the ![License](https://img.shields.io/badge/License-MIT-blue.svg), [MIT Link](https://www.opensource.org/licenses/MIT)
