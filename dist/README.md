@@ -2,7 +2,8 @@
   # README Generator
 
   ## Description
-  User creates a professional README using node index.js question prompts.
+  User can create a professional README using the node index.js prompt questions. 
+  This project was made using npm install, and VsCode.
 
   ## Table of Contents
   * [Installation](#installation)
@@ -13,10 +14,12 @@
   * [Questions](#questions)
 
   ## Installation
-  User clones repo, and npm install
+  User downloads repository, then runs `npm install`.
 
   ## Usage
-  User opens node index.js, then answers the questions to fill out the README
+  Open node index.js, then answer the questions prompted to fill out the README.
+  
+  [Untitled_ Jul 28 2023 5_45 PM.webm](https://github.com/Amzemina/ReadMe_Generator/assets/128834562/4495c813-a67f-419f-aa9d-ef74b2885523)
 
   ## Contributing
   n/a
