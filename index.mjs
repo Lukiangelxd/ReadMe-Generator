@@ -1,28 +1,7 @@
 import inquirer from 'inquirer';
 import fs from 'fs';
-import generateReadme from './generateReadme';
+import generateReadme from './utils/generateReadme';
 
-// Function to write the README file
-function writeToFile(fileName, data) {
-  fs.writeFile(fileName, data, (err) =>
-    err ? console.error(err) : console.log('README.md successfully generated!')
-  );
-}
-
-// Function to initialize the application
-function init() {
-  inquirer.prompt(questions)
-    .then((answers) => {
-      // Use the answers to generate your README
-      const generatedReadme = generateReadme(answers);
-
-      // Write the README file
-      writeToFile('README.md', generateReadme);
-    })
-    .catch((error) => {
-      console.error('Error during prompts:', error);
-    });
-}
 
 // Array of Questions
 const questions = [
@@ -74,15 +53,28 @@ const questions = [
       },
     ];
     
-    inquirer.prompt(questions)
-      .then((answers) => {
-        console.log('User Responses:', answer);
+//function to write README file
+function writeToFile(fileName, data) {
+  let outPutDirectory = "dist"
+  if (!fs.existsSync(outPutDirectory)){
+      fs.mkdirSync(outPutDirectory);
+  }
+  fs.writeFile(`${outPutDirectory}/${fileName}`, generateReadme(data), 'utf8', (err) => {
+      if (err) {
+          console.error('Error:', err);
+      } else {
+          console.log('README made!');
+      }
+  });
+}
 
-// Taking answers to generate readme
-        const generatedReadme = generateReadme(answers);
+//function to initialize app
+function init() {
+  inquirer.prompt(questions)
+      .then((data) => {
+          writeToFile("README.md", data)
       })
-      .catch((error) => {
-        console.error('Sorry, there has been an issue during the prompts', error);
-      });
+}
 
+//Call to initialize app
 init();
