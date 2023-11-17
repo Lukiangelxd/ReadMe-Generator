@@ -14,7 +14,7 @@ To use the README Generator, you need to have Node.js installed on your computer
   ## Usage
   Open terminal and type node index.js, then answer the questions prompted to fill out the README.
   
-Here is my exmaple of me using this application:
+Here is my exmaple of me using this application: https://drive.google.com/file/d/1brxvmx12yW4cswaLdk4soLrmm9X4LNE1/view
 
   ## Questions
   If you have any questions about this project, you can view it at https://github.com/Lukiangelxd
