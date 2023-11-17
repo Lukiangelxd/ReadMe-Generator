@@ -1,28 +1,32 @@
 
-  # Example Project Title
+  # undefined
 
   ## Description
-  Example project description. This section is typically longer than the title.
+  undefined
 
   ## Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
   * [Contributing](#contributing)
   * [Tests](#tests)
-
+  * [License](#license)
+  * [Questions](#questions)
 
   ## Installation
-  Clone the repository to your computer and then run `npm install`
+  by using git clone and then running `node index.js`
 
   ## Usage
-  Example project use text. This area describes how to use the deployed project.
+  PLACE SCREENSHOT HERE
 
   ## Contributing
-  Contributions are welcome.
+  You can fork the repository or clone the application to work on it and submit a request
 
   ## Tests
-  Run `npm test`
+  NA
 
+  ## License 
+  This project is licensed under the ![License](https://img.shields.io/badge/License-MIT-blue.svg), [MIT Link](https://www.opensource.org/licenses/MIT)
 
-
+  ## Questions
+  If you have any questions about this project, you can view it at https://github.com/undefined. You can also contact me at lukiangel57@gmail.com. 
   
