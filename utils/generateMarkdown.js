@@ -1,5 +1,4 @@
 //Function that returns a license badge based on which license is passed in
-// If there is no license, returns an empty string
 function renderLicenseBadge(license) {
   switch (license) {
     case "MIT":
@@ -14,7 +13,6 @@ function renderLicenseBadge(license) {
 }
 
 //Function that returns the license link
-// If there is no license, returns an empty string
 function renderLicenseLink(license) {
   switch (license) {
     case "MIT":
@@ -30,7 +28,6 @@ function renderLicenseLink(license) {
 
 
 //Function that returns the license section of README
-// If there is no license, returns an empty string
 function renderLicenseSection(license) {
   if (license !== "none") {
     return `This project is licensed under the ${renderLicenseBadge(license)}, ${renderLicenseLink(license)}`

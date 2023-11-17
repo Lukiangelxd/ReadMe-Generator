@@ -2,34 +2,20 @@
   # README Generator
 
   ## Description
-  User can create a professional README using the node index.js prompt questions. 
-  This project was made using npm install, and VsCode.
-
-  ## Table of Contents
-  * [Installation](#installation)
-  * [Usage](#usage)
-  * [Contributing](#contributing)
-  * [Tests](#tests)
-  * [License](#license)
-  * [Questions](#questions)
+The README Generator is a command-line application that automates the process of creating professional README.md files for your projects. It streamlines the README creation process, allowing developers to quickly generate high-quality documentation and focus more on building their applications.
 
   ## Installation
-  User downloads repository, then runs `npm install`.
+To use the README Generator, you need to have Node.js installed on your computer. If you don't have Node.js, you can download and install it from nodejs.org.
+
+1. Clone this repository to your local machine.
+2. Navigate to the project directory in your terminal.
+3. Run the following command to install the required dependencies: `npm install`
 
   ## Usage
-  Open node index.js, then answer the questions prompted to fill out the README.
+  Open terminal and type node index.js, then answer the questions prompted to fill out the README.
   
-  [Untitled_ Jul 28 2023 5_45 PM.webm](https://github.com/Amzemina/ReadMe_Generator/assets/128834562/4495c813-a67f-419f-aa9d-ef74b2885523)
-
-  ## Contributing
-  n/a
-
-  ## Tests
-  n/a
-
-  ## License 
-  This project is licensed under the ![License](https://img.shields.io/badge/License-MIT-blue.svg), [MIT Link](https://www.opensource.org/licenses/MIT)
+Here is my exmaple of me using this application:
 
   ## Questions
-  If you have any questions about this project, you can view it at https://github.com/amzemina. You can also contact me at amzemina@gmail.com. 
+  If you have any questions about this project, you can view it at https://github.com/Lukiangelxd
   

@@ -7,52 +7,51 @@ const fs = require('fs')
 const questions = [
     {
         type: 'input',
+        name: 'projectTitle',
         message: 'What is the title of your project?',
-        name: 'title',
-    },
-    {
+      },
+      {
         type: 'input',
-        message: 'What is the description of the project?',
-        name: 'description',
-    },
-    {
-        type: 'input',
-        message: 'What are the steps required to install your project?',
-        name: 'installation',
-    },
-    {
-        type: 'input',
-        message: 'How do you use this project?',
-        name: 'usage',
-    },
-    {
-        type: 'input',
-        message: 'What does the user need to know about contributing to the repo?',
-        name: 'contributing',
-    },
-    {
-        type: 'input',
-        message: 'How would the user run tests?',
-        name: 'tests',
-    },
-    {
-        type: 'list',
-        message: 'Choose a license for the project.',
-        name: 'license',
-        choices: ['MIT', 'Apache', 'GNU', 'none'],
-    },
-    {
-        type: 'input',
-        message: 'Enter GitHub username.',
-        name: 'github',
-    },
-    {
-        type: 'input',
-        message: 'Enter email.',
-        name: 'email',
-    },
-
-];
+        name: 'projectDescription',
+        message: 'Provide a description of your project:',
+      },
+      {
+          type: 'input',
+          name: 'installation',
+          message: 'How do you install your application?',
+        },
+        {
+          type: 'input',
+          name: 'usage',
+          message: 'Provide instructions and examples for how to use your application:',
+        },
+        {
+          type: 'list',
+          name: 'license',
+          message: 'Choose a license for your project:',
+          choices: ['MIT', 'Apache', 'GPL', 'None'],
+        },
+        {
+          type: 'input',
+          name: 'contributing',
+          message: 'Explain how others can contribute to your project:',
+        },
+        {
+          type: 'input',
+          name: 'tests',
+          message: 'Provide examples and instructions for running tests:',
+        },
+        {
+          type: 'input',
+          name: 'githubUsername',
+          message: 'What is your GitHub username?',
+        },
+        {
+          type: 'input',
+          name: 'email',
+          message: 'What is your email address?',
+        },
+      ];
 
 //function to write README file
 function writeToFile(fileName, data) {
